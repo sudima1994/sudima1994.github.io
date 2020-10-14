@@ -1,7 +1,7 @@
 <template>
   <div class="homepage-wrapper">
     <div class="header">
-      <h1>Country Informtation Center</h1>
+      <h2>Country Informtation Center</h2>
     </div>
     <div class="search-wrapper">
       <autocomplete
@@ -24,34 +24,34 @@
           <div class="card-body">
             <span class="initial-card-info">
               <p class="card-text">
-                <font-awesome-icon icon="home" />
+                <font-awesome-icon class="info-icon" icon="home" />
                 <span class="info-title">Capital:</span>
                 {{ filter.capital }}
               </p>
               <p class="card-text">
-                <font-awesome-icon icon="globe" />
+                <font-awesome-icon class="info-icon" icon="globe" />
                 <span class="info-title">Region:</span>
                 {{ filter.region }}
               </p>
               <p class="card-text">
-                <font-awesome-icon icon="user-friends" />
+                <font-awesome-icon class="info-icon" icon="user-friends" />
                 <span class="info-title">Population:</span>
                 {{ filter.population }}
               </p>
             </span>
             <span class="secondary-card-info">
               <p class="card-text">
-                <font-awesome-icon icon="clock" />
+                <font-awesome-icon class="info-icon" icon="clock" />
                 <span class="info-title">Time-zone:</span>
                 {{ filter.timezones[0] }}
               </p>
               <p class="card-text">
-                <font-awesome-icon icon="language" />
+                <font-awesome-icon class="info-icon" icon="language" />
                 <span class="info-title">Language:</span>
                 {{ filter.languages[0].name }}
               </p>
               <p class="card-text">
-                <font-awesome-icon icon="coins" />
+                <font-awesome-icon class="info-icon" icon="coins" />
                 <span class="info-title">Currency:</span>
                 {{ filter.currencies[0].name }}
                 {{ filter.currencies[0].symbol }}
@@ -337,9 +337,9 @@ body {
   padding-top: 4em;
 }
 .search-wrapper {
-  padding: 8em 0 5em 0;
+  padding: 5em 0 3em 0;
   margin: 0 auto;
-  max-width: 20vw;
+  max-width: 45%;
 }
 .country-card {
   display: flex;
@@ -350,7 +350,7 @@ body {
   justify-content: center;
 }
 .card {
-  width: 35%;
+  width: 45%;
   box-shadow: 0 2px 5px black;
 }
 .card-header {
@@ -377,6 +377,9 @@ body {
   .info-title {
     font-weight: 600;
     font-size: 0.9vw;
+  }
+  .info-icon {
+    margin-right: 0.4em;
   }
 }
 .card-body,
