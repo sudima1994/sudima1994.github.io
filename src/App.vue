@@ -151,11 +151,7 @@ export default {
       let questions = [
         {
           title: '"What is the capital of COUNTRY?"',
-          tags: [
-            "capital",
-            "city",
-            "COUNTRY",
-          ],
+          tags: ["capital", "city", "COUNTRY"],
           summary: '"The capital of COUNTRY is ANSWER"',
           alternates: '"What is the capital city of COUNTRY"',
         },
@@ -163,7 +159,8 @@ export default {
           title: '"In what region is COUNTRY located?"',
           tags: ["region", "location", "continent", "COUNTRY"],
           summary: '"COUNTRY is located in ANSWER"',
-          alernates: '"What is the continent of COUNTRY, Where is COUNTRY located"',
+          alernates:
+            '"What is the continent of COUNTRY, Where is COUNTRY located"',
         },
         {
           title: '"What is the population of COUNTRY?"',
@@ -288,7 +285,10 @@ export default {
                   addition = addition.replace("ANSWER", answer);
                 }
               }
-              addition = addition.replace("COUNTRY", country.name.split(',')[0].split('(')[0].trim());
+              addition = addition.replace(
+                "COUNTRY",
+                country.name.split(",")[0].split("(")[0].trim()
+              );
               csv += addition + (i < headers.length - 1 ? "," : "\r\n");
             }
           });
@@ -334,9 +334,10 @@ body {
 .header {
   display: flex;
   justify-content: center;
+  padding-top: 4em;
 }
 .search-wrapper {
-  padding: 10em 0 5em 0;
+  padding: 8em 0 5em 0;
   margin: 0 auto;
   max-width: 20vw;
 }
@@ -349,7 +350,7 @@ body {
   justify-content: center;
 }
 .card {
-  width: 40%;
+  width: 35%;
   box-shadow: 0 2px 5px black;
 }
 .card-header {
@@ -375,7 +376,12 @@ body {
 
   .info-title {
     font-weight: 600;
+    font-size: 0.9vw;
   }
+}
+.card-body,
+.card-footer {
+  font-size: 0.8vw;
 }
 .no-country-msg {
   display: flex;
