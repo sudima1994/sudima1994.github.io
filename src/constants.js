@@ -1,0 +1,98 @@
+// These are the questions that the bot can answer
+export const questions = [
+  {
+    title: '"What is the capital of COUNTRY?"',
+    tags: ["capital", "city", "COUNTRY"],
+    summary: '"The capital of COUNTRY is ANSWER"',
+    alternates: '"What is the capital city of COUNTRY"',
+  },
+  {
+    title: '"In what region is COUNTRY located?"',
+    tags: ["region", "location", "continent", "COUNTRY"],
+    summary: '"COUNTRY is located in ANSWER"',
+    alernates: '"What is the continent of COUNTRY, Where is COUNTRY located"',
+  },
+  {
+    title: '"What is the population of COUNTRY?"',
+    tags: ["population", "populace", "citizens", "people", "live", "COUNTRY"],
+    summary: '"There are ANSWER people living in COUNTRY"',
+    alternates: '"How many people live in COUNTRY"',
+  },
+  {
+    title: '"What is the time zone of COUNTRY?"',
+    tags: [
+      "timezones",
+      "time zone",
+      "belt",
+      "time",
+      "difference",
+      "UTC",
+      "COUNTRY",
+    ],
+    summary: '"The time zone of COUNTRY is ANSWER"',
+    alternates: '"What is the time difference in COUNTRY"',
+  },
+  {
+    title: '"What language is spoken in COUNTRY?"',
+    tags: [
+      "languages",
+      "language",
+      "speak",
+      "communicate",
+      "dialect",
+      "speech",
+      "tongue",
+      "COUNTRY",
+    ],
+    summary: '"The language that is spoken in COUNTRY is ANSWER"',
+    alternates: '"In what language do people communicate in COUNTRY"',
+  },
+  {
+    title: '"what is the currency of COUNTRY?"',
+    tags: [
+      "currencies",
+      "currency",
+      "money",
+      "coin",
+      "payment",
+      "coinage",
+      "cash",
+      "COUNTRY",
+    ],
+    summary: '"The accepted currency in COUNTRY is ANSWER"',
+    alternates: '"What money should I bring to COUNTRY"',
+  },
+  {
+    title: '"What are the neighboring countries of COUNTRY?"',
+    tags: ["borders", "border", "neighbor", "neighboring", "bounds", "COUNTRY"],
+    summary: '"The neighboring countries of COUNTRY are ANSWER"',
+    alternates: '"What are the borders of COUNTRY"',
+  },
+  {
+    title: '"What is the flag of COUNTRY"',
+    tags: ["flag", "banner", "COUNTRY"],
+    summary: '"This is the flag of COUNTRY"',
+    image_url: '"PICTURE"',
+    alternates: '"What is the banner of COUNTRY"',
+  },
+];
+
+// These are the table headers for the knowledge base csv file structure
+export const headers = [
+  "id",
+  "tags",
+  "title",
+  "summary",
+  "alternates",
+  "detail",
+  "content_url",
+  "image_url",
+  "audio_url",
+  "video_url",
+  "category",
+  "positiveLearnings",
+  "negativeLearnings",
+  "intentName",
+  "validFrom",
+  "validTo",
+];
